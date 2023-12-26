@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 th:text="靜態文字"></h1>
+<h2 th:text="${session.abc}"></h2>
+<h2 th:text="${bcd}"></h2>
+<h2 th:text="${r}"></h2>
+<h2 th:text="${param.msg}"></h2>
+<h2 th:text="${p}"></h2>
+<div th:if="${3>5}">3>5</div>
+<div th:if="${3<5}">3<5</div>
+<div th:if="${#strings.equals(param.msg[0],'Admin')}">輸入的正確就顯示Admin</div>
+</body>
+</html>
